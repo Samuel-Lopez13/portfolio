@@ -5,58 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Backend Developer</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            emerald: {
-              '50': '#ecfdf5',
-              '100': '#d1fae5',
-              '200': '#a7f3d0',
-              '300': '#6ee7b7',
-              '400': '#34d399',
-              '500': '#10b981',
-              '600': '#059669',
-              '700': '#047857',
-              '800': '#065f46',
-              '900': '#064e3b',
-              '950': '#022c22',
-            },
-            blue: {
-              '50': '#eff6ff',
-              '100': '#dbeafe',
-              '200': '#bfdbfe',
-              '300': '#93c5fd',
-              '400': '#60a5fa',
-              '500': '#3b82f6',
-              '600': '#2563eb',
-              '700': '#1d4ed8',
-              '800': '#1e40af',
-              '900': '#1e3a8a',
-              '950': '#172554',
-            },
-            zinc: {
-              '50': '#fafafa',
-              '100': '#f4f4f5',
-              '200': '#e4e4e7',
-              '300': '#d4d4d8',
-              '400': '#a1a1aa',
-              '500': '#71717a',
-              '600': '#52525b',
-              '700': '#3f3f46',
-              '800': '#27272a',
-              '900': '#18181b',
-              '950': '#09090b',
-            },
-          }
-        }
-      }
-    }
-  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body class="min-h-screen bg-black text-white">
   <!-- Header -->
@@ -64,7 +16,7 @@
     <nav class="flex justify-between items-center">
       <div class="text-xl font-bold">
         <span class="text-emerald-500">&lt;</span>
-        <span>DevName</span>
+        <span>Samuelopez</span>
         <span class="text-emerald-500">/&gt;</span>
       </div>
       <div class="hidden md:flex space-x-6">
@@ -73,9 +25,9 @@
         <a href="#projects" class="hover:text-emerald-500 transition-colors">Proyectos</a>
         <a href="#contact" class="hover:text-emerald-500 transition-colors">Contacto</a>
       </div>
-      <button class="border border-emerald-500 text-emerald-500 hover:bg-emerald-500/10 px-4 py-2 rounded-md">
-        Descargar CV
-      </button>
+      <a href="https://firebasestorage.googleapis.com/v0/b/logos-a6d6f.appspot.com/o/Documents%2Fcv-samuel-lopez.pdf?alt=media&token=44c2bdaa-75e9-4927-b3a2-42c6142c4921" class="border border-emerald-500 text-emerald-500 hover:bg-emerald-500/10 px-4 py-2 rounded-md" target="_blank" download>
+        <i class="fas fa-download mr-2"></i> Descargar CV
+      </a>
     </nav>
   </header>
 
@@ -84,19 +36,19 @@
     <div class="max-w-3xl">
       <h1 class="text-4xl md:text-6xl font-bold mb-6">
         Backend Developer
-        <span class="block text-emerald-500">.NET Specialist</span>
+        <span class="block text-emerald-500">C# .NET</span>
       </h1>
       <p class="text-xl text-gray-400 mb-8">
-        Desarrollo APIs robustas, microservicios escalables y arquitecturas backend eficientes. Especializado en
-        tecnologías .NET con experiencia en desarrollo frontend.
+        Tengo experiencia en desarrollo backend con .NET, trabajando en la creación de APIs y microservicios. 
+        También he participado en proyectos frontend.
       </p>
       <div class="flex flex-wrap gap-4">
-        <button class="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-md flex items-center">
+        <a href="#contact" class="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-md flex items-center">
           <i class="fas fa-envelope mr-2"></i> Contactar
-        </button>
-        <button class="border border-white/20 text-white px-4 py-2 rounded-md flex items-center">
+        </a>
+        <a href="https://github.com/Samuel-Lopez13" target="_blank" class="border border-white/20 text-white px-4 py-2 rounded-md flex items-center">
           <i class="fab fa-github mr-2"></i> GitHub
-        </button>
+        </a>
       </div>
     </div>
   </section>
@@ -115,17 +67,19 @@
             <i class="fas fa-code mr-3 text-emerald-500"></i> Sobre mí
           </h2>
           <p class="text-gray-200 mb-4">
-            Soy un desarrollador backend con experiencia en la creación de APIs y servicios web escalables
-            utilizando .NET. Mi enfoque se centra en escribir código limpio, mantenible y de alto rendimiento.
+            Soy un desarrollador backend apasionado por el aprendizaje constante. Egresado de Ingeniería en Sistemas Computacionales, 
+            lo que me ha permitido desarrollar una sólida base en diversas áreas de la tecnología. Mi enfoque se centra en el desarrollo 
+            con .NET y la creación de soluciones escalables.
           </p>
           <p class="text-gray-200 mb-6">
-            También tengo experiencia en desarrollo frontend, lo que me permite entender el ciclo completo de
-            desarrollo y colaborar eficazmente con equipos multidisciplinarios.
+            También tengo experiencia en desarrollo frontend, lo que me permite entender el ciclo completo de desarrollo y colaborar 
+            eficazmente con equipos multidisciplinarios. Mi objetivo es seguir creciendo profesionalmente y contribuir en proyectos 
+            innovadores que generen impacto.
           </p>
           <div class="grid grid-cols-2 gap-4">
             <div>
               <h3 class="font-medium text-emerald-500 mb-2">Experiencia</h3>
-              <p class="text-gray-400">+5 años</p>
+              <p class="text-gray-400">Junior Backend Developer</p>
             </div>
             <div>
               <h3 class="font-medium text-emerald-500 mb-2">Especialidad</h3>
@@ -133,11 +87,11 @@
             </div>
             <div>
               <h3 class="font-medium text-emerald-500 mb-2">Ubicación</h3>
-              <p class="text-gray-400">Remoto</p>
+              <p class="text-gray-400">Campeche, MX (Remoto preferido / Abierto a reubicación)</p>
             </div>
             <div>
               <h3 class="font-medium text-emerald-500 mb-2">Idiomas</h3>
-              <p class="text-gray-400">Español, Inglés</p>
+              <p class="text-gray-400">Español (Nativo), Inglés (Básico)</p>
             </div>
           </div>
         </div>
@@ -169,7 +123,7 @@
               </div>
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                <span>.NET Core / .NET 8</span>
+                <span>.NET 8</span>
               </div>
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 bg-emerald-400 rounded-full"></div>
@@ -181,7 +135,11 @@
               </div>
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                <span>SQL Server</span>
+                <span>MediatR</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                <span>Repository Pattern</span>
               </div>
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 bg-emerald-400 rounded-full"></div>
@@ -189,41 +147,41 @@
               </div>
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                <span>Microservicios</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <div class="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                <span>Docker</span>
+                <span>Clean Architecture</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Databases & DevOps -->
+        <!-- Tools & Version Control -->
         <div class="bg-zinc-900/80 border border-zinc-700 rounded-lg overflow-hidden">
           <div class="p-6">
             <h3 class="text-xl font-semibold flex items-center">
-              <i class="fas fa-database mr-2 text-emerald-500"></i> Bases de Datos & DevOps
+              <i class="fas fa-tools mr-2 text-emerald-500"></i> Herramientas & Control de Versiones
             </h3>
-            <p class="text-sm text-gray-400 mt-1">Almacenamiento y operaciones</p>
+            <p class="text-sm text-gray-400 mt-1">Herramientas de desarrollo</p>
           </div>
           <div class="p-6 pt-0">
             <div class="grid grid-cols-2 gap-4">
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                <span>SQL Server</span>
+                <span>Git</span>
               </div>
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                <span>PostgreSQL</span>
+                <span>GitHub</span>
               </div>
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                <span>MongoDB</span>
+                <span>MySQL</span>
               </div>
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                <span>Redis</span>
+                <span>Swagger</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                <span>Postman</span>
               </div>
             </div>
           </div>
@@ -249,41 +207,37 @@
               </div>
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 bg-blue-300 rounded-full"></div>
-                <span>TypeScript</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <div class="w-2 h-2 bg-blue-300 rounded-full"></div>
-                <span>React</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <div class="w-2 h-2 bg-blue-300 rounded-full"></div>
-                <span>Angular</span>
+                <span>Vue.js</span>
               </div>
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 bg-blue-300 rounded-full"></div>
                 <span>Tailwind CSS</span>
               </div>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-blue-300 rounded-full"></div>
+                <span>Bootstrap</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Other Skills -->
+        <!-- Best Practices -->
         <div class="bg-zinc-900/80 border border-zinc-700 rounded-lg overflow-hidden">
           <div class="p-6">
             <h3 class="text-xl font-semibold flex items-center">
-              <i class="fas fa-terminal mr-2 text-blue-400"></i> Otras Habilidades
+              <i class="fas fa-check-circle mr-2 text-blue-400"></i> Buenas Prácticas
             </h3>
-            <p class="text-sm text-gray-400 mt-1">Metodologías y soft skills</p>
+            <p class="text-sm text-gray-400 mt-1">Metodologías y buenas prácticas</p>
           </div>
           <div class="p-6 pt-0">
             <div class="grid grid-cols-2 gap-4">
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 bg-blue-300 rounded-full"></div>
-                <span>Scrum/Agile</span>
+                <span>Principios SOLID</span>
               </div>
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 bg-blue-300 rounded-full"></div>
-                <span>TDD</span>
+                <span>Clean Architecture</span>
               </div>
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 bg-blue-300 rounded-full"></div>
@@ -492,35 +446,32 @@
               <h3 class="text-xl font-semibold mb-4">Información de Contacto</h3>
               <div class="flex items-center gap-3">
                 <i class="fas fa-envelope text-emerald-500"></i>
-                <span>email@ejemplo.com</span>
+                <span>samuelopez1301@gmail.com</span>
               </div>
               <div class="flex items-center gap-3">
                 <i class="fab fa-github text-emerald-500"></i>
-                <span>github.com/username</span>
+                <span>github.com/Samuel-Lopez13</span>
               </div>
               <div class="mt-8">
                 <p class="text-gray-400 mb-4">
-                  Estoy disponible para proyectos freelance, trabajo remoto y colaboraciones. No dudes en
-                  contactarme para discutir tu proyecto.
+                  Estoy disponible para oportunidades laborales, con preferencia por trabajo remoto pero abierto a reubicación. 
+                  Me interesa participar en proyectos desafiantes, ya sea como parte de un equipo o en colaboraciones freelance. 
+                  No dudes en contactarme para discutir cualquier oportunidad.
                 </p>
-                <div class="flex gap-4 mt-6">
-                  <button class="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-md flex items-center">
-                    <i class="fas fa-envelope mr-2"></i> Enviar Email
-                  </button>
-                </div>
               </div>
             </div>
 
             <div class="space-y-4">
               <h3 class="text-xl font-semibold mb-4">Envíame un Mensaje</h3>
               <div class="space-y-4">
-                <div class="grid grid-cols-1 gap-4">
+                <form id="contact-form" class="grid grid-cols-1 gap-4">
                   <div class="space-y-2">
                     <label for="name" class="text-sm font-medium">
                       Nombre
                     </label>
                     <input
                       id="name"
+                      required
                       class="w-full px-3 py-2 bg-zinc-800 border border-zinc-600 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
                     />
                   </div>
@@ -531,6 +482,7 @@
                     <input
                       id="email"
                       type="email"
+                      required
                       class="w-full px-3 py-2 bg-zinc-800 border border-zinc-600 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
                     />
                   </div>
@@ -541,13 +493,14 @@
                     <textarea
                       id="message"
                       rows="4"
+                      required
                       class="w-full px-3 py-2 bg-zinc-800 border border-zinc-600 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
                     ></textarea>
                   </div>
-                  <button class="w-full bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-md">
-                    Enviar Mensaje
+                  <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-md">
+                    <i class="fas fa-envelope mr-2"></i> Enviar Mensaje
                   </button>
-                </div>
+                </form>
               </div>
             </div>
           </div>
@@ -563,10 +516,10 @@
         <div class="mb-4 md:mb-0">
           <div class="text-xl font-bold">
             <span class="text-emerald-500">&lt;</span>
-            <span>DevName</span>
+            <span>Samuelopez</span>
             <span class="text-emerald-500">/&gt;</span>
           </div>
-          <p class="text-gray-400 text-sm mt-2">Desarrollador Backend .NET especializado</p>
+          <p class="text-gray-400 text-sm mt-2">Desarrollador Backend C# .NET</p>
         </div>
         <div class="flex gap-6">
           <a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors">
@@ -578,12 +531,13 @@
         </div>
       </div>
       <div class="mt-8 pt-8 border-t border-zinc-800 text-center text-gray-500 text-sm">
-        <p>© <script>document.write(new Date().getFullYear())</script> DevName. Todos los derechos reservados.</p>
+        <p>© <script>document.write(new Date().getFullYear())</script> Samuelopez.</p>
       </div>
     </div>
   </footer>
 
   <!-- JavaScript -->
   <script src="js/tabs.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html>
